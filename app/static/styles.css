@@ -1,0 +1,115 @@
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+    color:#333;
+}
+
+header{
+    background:#9ecaf8;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    margin-bottom:10px;
+}
+
+main{
+    width:80%;
+    max-width:850px;
+    margin:30px auto;
+}
+
+section{
+    background:white;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:8px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+h2{
+    color:#9ecaf8;
+    text-align:center;
+}
+
+p{
+    text-align:center;
+    line-height:1.6;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+textarea{
+    width:100%;
+    height:220px;
+
+    padding:12px;
+
+    border:1px solid #ccc;
+    border-radius:6px;
+
+    font-size:16px;
+    font-family:Arial;
+
+    resize:vertical;
+    box-sizing:border-box;
+}
+
+button{
+
+    margin-top:20px;
+
+    padding:12px;
+
+    background:#4a90e2;
+    color:white;
+
+    border:none;
+    border-radius:6px;
+
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+
+    background:#9ecaf8;
+
+}
+
+.downloads{
+
+    text-align:center;
+
+}
+
+.downloads a{
+
+    text-decoration:none;
+
+}
+
+.downloads button{
+
+    width:220px;
+    margin:10px;
+
+}
+
+footer{
+
+    background:#9ecaf8;
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+    margin-top:30px;
+
+}

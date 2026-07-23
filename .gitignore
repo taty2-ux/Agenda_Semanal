@@ -1,0 +1,17 @@
+# Ambiente virtual
+.venv/
+
+# Configurações do VS Code
+.vscode/
+
+# Variáveis de ambiente
+.env
+
+# Cache do Python
+__pycache__/
+
+# Arquivo gerado pelo script
+AppAgenda.zip
+
+# Arquivo para testes
+app/tests/

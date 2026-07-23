@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Estudos</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+
+    {% if msg %}
+        <script>
+            alert("{{ msg }}");
+        </script>
+    {% endif %}
+
+<header>
+    <h1>Agenda de Estudos</h1>
+    <p>Organize seus horários de estudo de forma simples e personalizada.</p>
+</header>
+
+<main>
+
+    <section class="explicacao">
+
+        <h2>Como funciona?</h2>
+
+        <p>
+            Escreva sua rotina de estudos no campo abaixo.
+            Você pode informar seus horários livres, as matérias que deseja estudar,
+            o tempo disponível e qualquer outra informação importante.
+        </p>
+
+        <p>
+            A inteligência artificial irá analisar essas informações
+            e montar uma agenda personalizada para você.
+        </p>
+
+    </section>
+
+    <section class="formulario">
+
+        <h2>Informe sua rotina</h2>
+
+        <script>
+            function gerarAgenda() {
+            document.getElementById("alert").innerText = "Gerando agenda...";
+            }
+        </script>
+
+        <form action="/enviar" method="POST">
+
+            <textarea
+                name="mensagem"
+                placeholder="Exemplo:
+
+• Trabalho das 08:00 às 17:00
+• Faculdade às 19:00
+• Quero estudar Python, Java e Banco de Dados
+• Tenho 3 horas livres por dia."
+            ></textarea>
+
+            <button onclick="gerarAgenda()" type="submit">
+                Gerar Agenda
+            </button>
+
+            <a id="alerta"></a>
+
+        </form>
+
+    </section>
+
+    <section class="downloads">
+
+        <h2>Downloads</h2>
+
+        <a href="/download">
+            <button>Baixar Agenda</button>
+        </a>
+
+        <a href="/downloadApp">
+            <button>Baixar Aplicativo</button>
+        </a>
+
+    </section>
+
+</main>
+
+<footer>
+
+    Projeto desenvolvido utilizando Python, Flask e HTML/CSS.
+
+</footer>
+
+</body>
+</html>
